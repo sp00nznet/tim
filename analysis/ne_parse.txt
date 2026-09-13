@@ -1,0 +1,61 @@
+=== NE Executable: tim/original/ex/TEMIM.EXE ===
+Linker: 5.10
+Target OS: Windows
+Flags: 0x030A (GLOBALHEAP | PROTMODE)
+Entry: seg 1:0000
+Stack: seg 34, SP=0x0000
+Alignment shift: 9 (sector size: 512)
+
+Segments: 34 total (27 CODE, 7 DATA)
+Code size: 197,832 bytes
+Relocations: 4,743 total
+
+Imported modules: KERNEL, USER, GDI
+
+Resident names (5):
+  0: TEMIM
+  1: CONFIRMDLGPROC
+  2: STATUSDLGPROC
+  3: DESTROYALLMONSTERS
+  4: TIMWINDOWPROC
+
+Entry points (4):
+  #1: seg 7:0x08F6 (CONFIRMDLGPROC)
+  #2: seg 7:0x05EC (STATUSDLGPROC)
+  #3: seg 7:0x0D66 (DESTROYALLMONSTERS)
+  #4: seg 8:0x0000 (TIMWINDOWPROC)
+
+=== Code Segments ===
+  Seg   1: 0x00000A00  size=0x2819 ( 10265), 29 relocs DISC
+  Seg   2: 0x00003400  size=0x1F62 (  8034), 202 relocs DISC
+  Seg   3: 0x00005A00  size=0x13C4 (  5060), 142 relocs DISC
+  Seg   4: 0x00007400  size=0x2F66 ( 12134), 253 relocs DISC
+  Seg   5: 0x0000AC00  size=0x0930 (  2352), 41 relocs DISC
+  Seg   6: 0x0000B800  size=0x200E (  8206), 258 relocs DISC
+  Seg   7: 0x0000E200  size=0x1424 (  5156), 191 relocs DISC
+  Seg   8: 0x0000FE00  size=0x1942 (  6466), 173 relocs DISC
+  Seg   9: 0x00011E00  size=0x1B4F (  6991), 216 relocs DISC
+  Seg  10: 0x00014200  size=0x1976 (  6518), 147 relocs DISC
+  Seg  11: 0x00016200  size=0x0CF8 (  3320), 22 relocs DISC
+  Seg  12: 0x00017000  size=0x16FE (  5886), 205 relocs DISC
+  Seg  13: 0x00018E00  size=0x343A ( 13370), 317 relocs DISC
+  Seg  14: 0x0001CE00  size=0x1E72 (  7794), 244 relocs DISC
+  Seg  15: 0x0001F600  size=0x1CAE (  7342), 136 relocs DISC
+  Seg  16: 0x00021800  size=0x1DAB (  7595), 249 relocs DISC
+  Seg  17: 0x00023E00  size=0x1DB8 (  7608), 200 relocs DISC
+  Seg  18: 0x00026400  size=0x1D18 (  7448), 230 relocs DISC
+  Seg  19: 0x00028A00  size=0x17C4 (  6084), 108 relocs DISC
+  Seg  20: 0x0002A600  size=0x210B (  8459), 59 relocs DISC
+  Seg  21: 0x0002CA00  size=0x0DC4 (  3524), 73 relocs DISC
+  Seg  22: 0x0002DC00  size=0x5114 ( 20756), 178 relocs DISC
+  Seg  23: 0x00033400  size=0x0BFF (  3071), 101 relocs DISC
+  Seg  24: 0x00034400  size=0x183C (  6204), 112 relocs DISC
+  Seg  25: 0x00036000  size=0x0D06 (  3334), 149 relocs DISC
+  Seg  26: 0x00037200  size=0x2993 ( 10643) DISC
+  Seg  27: 0x00039C00  size=0x1074 (  4212), 83 relocs DISC
+
+=== Relocation Summary ===
+  Internal references: 4046
+  Import references: 697
+  Code segments referenced by relocations: 27
+  Data segments referenced by relocations: 6
