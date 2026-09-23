@@ -11,6 +11,9 @@ already in the collection.
 
 ## Project Status: **P0 complete, P1 not started**
 
+Reconnaissance only. Nothing has been lifted, and nothing builds or runs yet.
+What is here is the P0 write-up and `analysis/ne_parse.txt`.
+
 ---
 
 ## What P0 found
@@ -73,12 +76,16 @@ probably reads two games' content, not one.
 
 ## Where it goes next (P1)
 
-1. `ne/ne_parse.py` → `ne_decode.py` → `ne_xref.py`. Seed function starts from
+1. `tools/ne/ne_parse.py` → `ne_decode.py` → `ne_xref.py`. Seed function starts from
    the four named entry points and the relocation targets.
 2. Score the recovery. Borland large-model far calls are what
    `disasm/largemodel16.py` was built for on DinoPark Tycoon (3,609 of 3,611
    far calls resolved); check whether this is large model before assuming.
-3. `.PRS` before anything renders.
+3. Lift with `tools/lift/ne_lift.py` and link against pcrecomp's
+   `runtime/win16/`. That runtime and the NE generators (`gen_image`,
+   `gen_segments_h`, `gen_win16_stubs`, `gen_unresolved_stubs`) are upstream
+   now, so lift → compile → link is a closed loop for a new Win16 target.
+4. `.PRS` before anything renders.
 
 ## Layout
 
@@ -95,3 +102,7 @@ tim/
 The Even More Incredible Machine © 1993 Presage Software Development /
 Dynamix / Sierra On-Line. This project neither contains nor distributes any
 part of it.
+
+The code and documentation here are MIT; [LICENSE](LICENSE) spells out that
+the grant stops at our own work and does not reach the game or anything
+lifted from it.
